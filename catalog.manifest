@@ -1,0 +1,5 @@
+# catalog.manifest — how this catalog describes itself to `kiwi catalog list`
+NAME=kiwi-catalog
+DESCRIPTION=The Kiwi Network app catalog — open source, no accounts, no lock-in
+HOMEPAGE=https://github.com/derlocke-ng/kiwi-catalog
+MAINTAINER=derlocke-ng

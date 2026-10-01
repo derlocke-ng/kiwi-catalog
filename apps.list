@@ -1,0 +1,19 @@
+# The Kiwi Network app catalog.
+# Register it once per machine:
+#   kiwi catalog add https://github.com/derlocke-ng/kiwi-catalog.git
+#
+# ONE line per app, even when the app installs both a root service and a
+# desktop component. The app's own kiwi.manifest declares which scopes it
+# needs (SCOPES=user system), so this file does not repeat it.
+#
+# Optional per-entry overrides:
+#   branch=<name>    track a branch instead of release tags
+#   ref=<tag>        pin to an exact version
+#   scope=<user|system>
+#                    install only that half on this machine, even if the app
+#                    declares both. A filter, not a declaration.
+#
+# Apps follow their latest version tag; repos without tags follow HEAD.
+
+https://github.com/derlocke-ng/kiwi-updater.git
+https://github.com/derlocke-ng/kiwi-killswitch.git
