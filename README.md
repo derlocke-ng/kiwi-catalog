@@ -9,7 +9,8 @@ kiwi catalog add https://github.com/derlocke-ng/kiwi-catalog.git
 
 `kiwi` syncs this repo before every check and update, so managing a fleet is
 just git: **add an app** = add its URL to [apps.list](apps.list) and commit;
-**pin or roll back** = append `ref=<tag>`; **remove** = delete the line
+**pin or roll back** = append `ref=<tag>` (on one machine,
+`kiwi pin <app> <tag>` does the same locally); **remove** = delete the line
 (installed copies stay until uninstalled). A machine's own `apps.list` always
 wins over a catalog.
 
@@ -41,8 +42,13 @@ here means someone thought the app was worth having, not that its code has been
 reviewed. Read `kiwi info <app>` before installing something you do not already
 know.
 
-Pinning, update diffs and signature checking are
-[planned in kiwi-updater](https://github.com/derlocke-ng/kiwi-updater#planned-choosing-what-you-run).
-Until then the honest position is: adding a catalog is a decision about whose
-code you are willing to run, and `ref=<tag>` on an entry is how you stop it
-changing underneath you.
+Since kiwi-updater 1.3.0 the tools for making that decision deliberately
+[exist](https://github.com/derlocke-ng/kiwi-updater#choosing-what-you-run):
+`kiwi info --installer <app>` prints the script an install would run before it
+runs, `kiwi diff <app>` shows what an update would change — the installer's
+own diff included — and `kiwi pin <app> <tag>` holds a version until you say
+otherwise. Signature checking is still planned.
+
+The honest position stays the same underneath: adding a catalog is a decision
+about whose code you are willing to run. These commands exist so you can make
+it with your eyes open.
