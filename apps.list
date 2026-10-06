@@ -20,3 +20,11 @@ https://github.com/derlocke-ng/kiwi-killswitch.git
 https://github.com/derlocke-ng/ensconce.git
 https://github.com/derlocke-ng/kiwi-cli-tools-desktop.git
 https://github.com/derlocke-ng/kiwi-fox.git
+
+# kiwi-fox provider modules — each gives kiwi-fox a SOCKS5/VPN exit. Installed
+# into kiwi-fox's modules directory; kiwi-fox manages their lifecycle. They
+# depend on kiwi-fox, which kiwi installs first.
+https://github.com/derlocke-ng/kiwi-plugin-tor.git
+https://github.com/derlocke-ng/kiwi-plugin-vpn.git
+https://github.com/derlocke-ng/kiwi-plugin-9proxy.git
+https://github.com/derlocke-ng/kiwi-plugin-myst.git
