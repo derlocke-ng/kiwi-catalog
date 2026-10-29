@@ -19,13 +19,17 @@ https://github.com/derlocke-ng/kiwi-updater.git
 https://github.com/derlocke-ng/kiwi-killswitch.git
 https://github.com/derlocke-ng/ensconce.git
 https://github.com/derlocke-ng/kiwi-cli-tools-desktop.git
+# kiwi-proxy before the apps that use it: kiwi-fox's identities, kiwi-pentesting's
+# tools and the provider modules below all exit through its gateways.
+https://github.com/derlocke-ng/kiwi-proxy.git
 https://github.com/derlocke-ng/kiwi-fox.git
 https://github.com/derlocke-ng/kiwi-server.git
 https://github.com/derlocke-ng/syncman.git
 
-# kiwi-fox provider modules — each gives kiwi-fox a SOCKS5/VPN exit. Installed
-# into kiwi-fox's modules directory; kiwi-fox manages their lifecycle. They
-# depend on kiwi-fox, which kiwi installs first.
+# Provider modules — each gives kiwi-proxy a SOCKS5/VPN exit, for kiwi-fox and
+# everything else that uses it. Installed into kiwi-proxy's modules directory;
+# kiwi-proxy manages their lifecycle. They depend on kiwi-proxy, which kiwi
+# installs first (releases before 0.2.0 went to kiwi-fox, and depend on it).
 https://github.com/derlocke-ng/kiwi-plugin-tor.git
 https://github.com/derlocke-ng/kiwi-plugin-vpn.git
 https://github.com/derlocke-ng/kiwi-plugin-9proxy.git
