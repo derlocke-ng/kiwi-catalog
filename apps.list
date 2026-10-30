@@ -25,6 +25,7 @@ https://github.com/derlocke-ng/kiwi-proxy.git
 https://github.com/derlocke-ng/kiwi-fox.git
 https://github.com/derlocke-ng/kiwi-server.git
 https://github.com/derlocke-ng/syncman.git
+https://github.com/derlocke-ng/gnome-monitor.git
 
 # Provider modules — each gives kiwi-proxy a SOCKS5/VPN exit, for kiwi-fox and
 # everything else that uses it. Installed into kiwi-proxy's modules directory;
