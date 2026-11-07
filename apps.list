@@ -23,6 +23,7 @@ https://github.com/derlocke-ng/kiwi-cli-tools-desktop.git
 # tools and the provider modules below all exit through its gateways.
 https://github.com/derlocke-ng/kiwi-proxy.git
 https://github.com/derlocke-ng/kiwi-fox.git
+https://github.com/derlocke-ng/kiwi-custodia.git
 https://github.com/derlocke-ng/kiwi-server.git
 https://github.com/derlocke-ng/syncman.git
 https://github.com/derlocke-ng/gnome-monitor.git
